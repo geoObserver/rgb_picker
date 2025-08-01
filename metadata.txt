@@ -1,16 +1,17 @@
 [general]
 name=RGB Color Picker
-description=Das Plugin liefert auf Klick ins Kartenfenster (Canvas) die Farbwerte des angeklickten Pixels in RGB und rechnet diese auch gleich in HEX - und CYMK-Werte um. Ein genaue Beschreibung und FAQs finden Sie unter <a href="https://geoobserver.de/qgis-plugin-rgb_picker">https://geoobserver.de/qgis-plugin-rgb_picker</a>. Eine Haftung für die Richtigkeit aller Funktionen des Plugins kann trotz sorgfältiger Prüfung nicht übernommen werden. Das gilt auch für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen.<br><hr><br> The plugin provides the colour values of the clicked pixel in RGB and also converts them into HEX and CYMK values when clicked in the map window (canvas). A detailed description and FAQs can be found at <a href="https://geoobserver.de/qgis-plugin-rgb_picker">https://geoobserver.de/qgis-plugin-rgb_picker</a>. Despite careful checking, no liability can be accepted for the correctness of all functions of the plugin. This also applies to any damage or consequences arising from the direct or indirect use of the content provided.
-version=0.1
-qgisMinimumVersion=3.0
+description=Das Plugin liefert auf Klick ins Kartenfenster (Canvas) die Farbwerte des angeklickten Pixels in RGB und rechnet diese auch gleich in HEX, HSV- und CYMK-Werte um. Ein genaue Beschreibung und FAQs finden Sie unter <a href="https://geoobserver.de/qgis-plugin-rgb_picker">https://geoobserver.de/qgis-plugin-rgb_picker</a>. Eine Haftung für die Richtigkeit aller Funktionen des Plugins kann trotz sorgfältiger Prüfung nicht übernommen werden. Das gilt auch für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen.<br><hr><br> The plugin provides the colour values of the clicked pixel in RGB and also converts them into HEX-, HSV- and CYMK values when clicked in the map window (canvas). A detailed description and FAQs can be found at <a href="https://geoobserver.de/qgis-plugin-rgb_picker">https://geoobserver.de/qgis-plugin-rgb_picker</a>. Despite careful checking, no liability can be accepted for the correctness of all functions of the plugin. This also applies to any damage or consequences arising from the direct or indirect use of the content provided.
+version=0.2
+qgisMinimumVersion=3.30
 author=Mike Elstermann (#geoObserver)
 email=news@geoobserver.de
-about=Zeigt Farbinformationen (RGB, HEX, CMYK) von angeklickten Kartenpixeln. / Shows color info (RGB, HEX, CMYK) from clicked map pixels.
+about=Zeigt Farbinformationen (RGB, HEX, HSV, CMYK) von angeklickten Kartenpixeln. / Shows color info (RGB, HEX, HSV, CMYK) from clicked map pixels.
 tracker = https://github.com/geoObserver/rgb_picker/issues/
 repository = https://github.com/geoObserver/rgb_picker/
 homepage = https://geoobserver.de/qgis-plugin-rgb_picker/
 category = Plugins
 changelog = 0.1 ... Initiale Version / Initial version
+	0.2 ... HSV, EPSG, Einheiten und Farbvorschau ergänzt / HSV, EPSG, units and colour preview added
 
 [advanced]
 icon=logo.png
