@@ -24,7 +24,7 @@ class RGBColorPickerPlugin:
         self.tool = RGBPickerTool(self.canvas)
         self.canvas.setMapTool(self.tool)
         self.iface.messageBar().pushMessage("RGB Color Picker",
-            "Click on the map to get RGB-, HEX- & CMYK values.", level=Qgis.Info)
+            "Click on the map to get RGB-, HEX-, HSV- & CMYK values.", level=Qgis.Info)
 
     def unload(self):
         self.iface.removeToolBarIcon(self.action)
