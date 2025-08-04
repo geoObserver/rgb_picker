@@ -77,8 +77,8 @@ class RGBPickerTool(QgsMapTool):
             canvas = iface.mapCanvas()
             screen_point = QPoint(physical_x, physical_y)
             map_point = canvas.getCoordinateTransform().toMapCoordinates(screen_point)
-            QMessageBox.information(None, "RGB_Picker by #geoObserver",
-                f"<strong>Click-Coordinate:</strong><table><tr><td width=50>Pixel:<td></td>x: {physical_x}, y: {physical_y}</td></tr><tr><td>Real:<td></td>x: {str(round(map_point.x(),3))}, y: {str(round(map_point.y(),3))}<br>(EPSG:<a href=https://spatialreference.org/ref/epsg/{myEPSG}>{myEPSG})</a></td></tr></table><br><br><strong>ColorValues:</strong><table><tr><td width=50><a href=https://en.wikipedia.org/wiki/RGB_color_spaces>RGB:</a></td><td width=150>{r}, {g}, {b}  |  {str(myHex)}</td><td width=80 rowspan=4 style='Border:2px solid black; background-color:{str(myHex)}';> </td>" + 
+            QMessageBox.information(None, "RGB Color Picker by #geoObserver",
+                f"<strong>Click-Coordinate:</strong><table><tr><td width=50>Pixel:<td></td>x: {physical_x}, y: {physical_y}</td></tr><tr><td>Real:<td></td>x: {str(round(map_point.x(),3))}, y: {str(round(map_point.y(),3))}<br>(<a href=https://spatialreference.org/ref/epsg/{myEPSG}>EPSG:{myEPSG}</a>)</td></tr></table><br><br><strong>ColorValues:</strong><table><tr><td width=50><a href=https://en.wikipedia.org/wiki/RGB_color_spaces>RGB:</a></td><td width=150>{r}, {g}, {b}  |  {str(myHex)}</td><td width=80 rowspan=4 style='Border:2px solid black; background-color:{str(myHex)}';> </td>" + 
 f'</tr><tr><td><a href=https://en.wikipedia.org/wiki/CMYK_color_model>CMYK:</a><td></td>{str(myCMYK)}</td></tr><tr><td><a href=https://en.wikipedia.org/wiki/HSL_and_HSV>HSV:</a></td><td width=100>{str(myHSV)}</td></tr><tr><td><br><a href=https://geoobserver.de/qgis-plugin-rgb_picker>more ...</a></td><td></td></tr></table>')
         else:
             QMessageBox.warning(None, "Outside", "Clicked outside the visible map.")
