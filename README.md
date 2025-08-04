@@ -1,4 +1,4 @@
-# QGIS-Plugin: RGB_Picker
+# QGIS-Plugin: RGB Color Picker
 
 Das Plugin liefert auf Klick ins Kartenfenster (Canvas) die Farbwerte des angeklickten Pixels in RGB und rechnet diese auch gleich in HEX -, HSV und CYMK-Werte um. Ein genaue Beschreibung und FAQs  finden Sie unter https://geoobserver.de/qgis-plugin-rgb_picker.
 
